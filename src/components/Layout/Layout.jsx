@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { motion } from 'framer-motion';
+import bgHeader from 'assets/images/bg-header.png';
 import 'assets/fonts/fonts.css';
 
 const GlobalStyle = createGlobalStyle`
@@ -37,7 +38,6 @@ const GlobalStyle = createGlobalStyle`
     }
    }
 
-
   body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
@@ -60,18 +60,31 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Content = styled(motion.main)`
-  max-width: 1240px;
   margin: 0 auto;
+  max-width: 1240px;
   padding: 0 4rem;
+  padding-top: 10rem;
 `;
 
 const HeaderWrapper = styled(motion.div)`
-  position: fixed;
-  z-index: 4;
-  font-size: 20px;
-  width: 100%;
-  height: 10rem;
   font-family: 'Dynamoe';
+  font-size: 20px;
+  height: 10rem;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+
+  &::before {
+    background-image: url(${bgHeader});
+    background-size: auto 100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    transform: rotate(0.8deg);
+    width: 110%;
+    z-index: -1;
+  }
+
   @media only screen and (max-width: 900px) {
     height: 8rem;
   }
