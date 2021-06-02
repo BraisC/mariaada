@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { motion } from 'framer-motion';
 import bgHeader from 'assets/images/bg-header.png';
 import 'assets/fonts/fonts.css';
+import Header from 'components/Header/Header';
 
 const GlobalStyle = createGlobalStyle`
   
@@ -27,9 +28,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     --color-white: #f4f4f4;
     --color-black: #0A2027;
-    --color-primary: #71E2A6;
+    --color-primary: ##fecb0d;
     --color-translucid: #0a2027d8;
-    --color-red: #ff5959;
     @media only screen and (max-width: 75em){
         font-size: 56.25%;
     }
@@ -67,8 +67,6 @@ const Content = styled(motion.main)`
 `;
 
 const HeaderWrapper = styled(motion.div)`
-  font-family: 'Dynamoe';
-  font-size: 20px;
   height: 10rem;
   position: fixed;
   width: 100%;
@@ -80,7 +78,7 @@ const HeaderWrapper = styled(motion.div)`
     content: '';
     height: 100%;
     position: absolute;
-    transform: rotate(0.8deg);
+    transform: rotate(0.4deg);
     width: 110%;
     z-index: -1;
   }
@@ -117,8 +115,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <HeaderWrapper initial={{ y: '-100%' }} animate={{ y: '0', transition: { delay: '0.3' } }}>
-        {/* {isMobile ? <MobileHeader /> : <Header />} */}
-        Header
+        {isMobile ? <Header /> : <Header />}
       </HeaderWrapper>
       <Content
         initial={{ opacity: 0 }}
