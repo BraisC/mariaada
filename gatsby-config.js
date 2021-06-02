@@ -3,6 +3,7 @@ module.exports = {
     title: 'mariaada.es',
   },
   plugins: [
+    'gatsby-plugin-resolve-src',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
     'gatsby-plugin-mdx',
