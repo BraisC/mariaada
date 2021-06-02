@@ -111,10 +111,18 @@ const Layout = ({ children }) => {
     appHeight();
   }, []);
 
+  const variants = {
+    hidden: { width: 0 },
+    visible: {
+      width: '100%',
+      transition: { duration: 0.8, delay: 0.3, delayChildren: 1, staggerChildren: 0.3 },
+    },
+  };
+
   return (
     <>
       <GlobalStyle />
-      <HeaderWrapper initial={{ y: '-100%' }} animate={{ y: '0', transition: { delay: '0.3' } }}>
+      <HeaderWrapper initial="hidden" animate="visible" variants={variants}>
         {isMobile ? <Header /> : <Header />}
       </HeaderWrapper>
       <Content

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import bgLogo from 'assets/images/bg-logo.png';
+import { motion } from 'framer-motion';
 
 const Wrapper = styled.header`
   align-items: center;
@@ -11,7 +12,7 @@ const Wrapper = styled.header`
   z-index: 4;
 `;
 
-const HeaderLogo = styled.div`
+const HeaderLogo = styled(motion.div)`
   display: flex;
   flex-direction: column;
   font-family: Celosia;
@@ -34,7 +35,7 @@ const HeaderLogo = styled.div`
   }
 `;
 
-const Menu = styled.div`
+const Menu = styled(motion.div)`
   display: flex;
   margin-top: 15px;
   transform: rotate(-1.2deg);
@@ -62,11 +63,21 @@ const MenuOption = styled.p`
   }
 `;
 
+const logoVariants = {
+  hidden: { x: '-150%' },
+  visible: { x: 0, transition: { type: 'spring', bounce: 0.35 } },
+};
+
+const menuVariants = {
+  hidden: { y: '-200%' },
+  visible: { y: 0 },
+};
+
 const Header = () => (
   <>
     <Wrapper>
-      <HeaderLogo>Maria Ada</HeaderLogo>
-      <Menu>
+      <HeaderLogo variants={logoVariants}>Maria Ada</HeaderLogo>
+      <Menu variants={menuVariants}>
         <MenuOption>conóceme </MenuOption>
         <MenuOption>portfolio</MenuOption>
         <MenuOption>sketchbook</MenuOption>
