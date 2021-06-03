@@ -62,7 +62,6 @@ const GlobalStyle = createGlobalStyle`
 const Content = styled(motion.main)`
   margin: 0 auto;
   max-width: 1240px;
-  padding: 0 4rem;
   padding-top: 10rem;
 `;
 

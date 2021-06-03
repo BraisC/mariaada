@@ -1,4 +1,8 @@
-import { Prueba } from 'components/Prueba';
+import { Home } from 'components/Home/Home';
 
-const IndexPage = () => <Prueba />;
+const IndexPage = () => (
+  <>
+    <Home />
+  </>
+);
 export default IndexPage;
