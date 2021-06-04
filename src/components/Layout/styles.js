@@ -58,8 +58,11 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Content = styled(motion.main)`
   margin: 0 auto;
-  max-width: 1240px;
   padding-top: 10rem;
+
+  @media only screen and (max-width: 900px) {
+    padding-top: 8rem;
+  }
 `;
 
 export const HeaderWrapper = styled(motion.div)`
