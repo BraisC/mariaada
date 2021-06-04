@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'mariaada.es',
+    title: `Maria Ada - Fashion Designer`,
+    description: `¡Hola!`,
+    author: `@braisc`,
+    imageShare: `sharing.png`,
+    url: 'https://www.mariaada.es',
   },
   plugins: [
     'gatsby-plugin-resolve-src',
@@ -13,9 +17,17 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: './src/pages/',
+        path: `${__dirname}/src/pages/`,
       },
       __key: 'pages',
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+      __key: 'content',
     },
   ],
 };
