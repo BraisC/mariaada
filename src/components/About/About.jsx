@@ -1,5 +1,6 @@
+import Section from 'components/Section/Section';
 import { graphql, useStaticQuery } from 'gatsby';
-import styled from 'styled-components';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 export const About = () => {
   const data = useStaticQuery(
@@ -12,11 +13,11 @@ export const About = () => {
     `
   );
 
+  console.log(data);
+
   return (
-    <Wrapper>
-      <h1>Conóceme</h1>
-    </Wrapper>
+    <Section title="Conóceme">
+      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+    </Section>
   );
 };
-
-const Wrapper = styled.div``;
