@@ -1,10 +1,9 @@
 import React from 'react';
 import * as Styled from './styles';
-import Title from './components/Title/Title';
 
-const Section = ({ title, subTitle, children }) => (
+const Section = ({ title, children }) => (
   <Styled.Wrapper>
-    <Title title={title} subTitle={subTitle} />
+    <Styled.Title>{title}</Styled.Title>
     {children}
   </Styled.Wrapper>
 );

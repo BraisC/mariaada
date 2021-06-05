@@ -5,9 +5,20 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 12rem;
-  margin-top: 12rem;
+  margin: 8rem auto;
+  max-width: 1240px;
+  padding: 0 4rem;
+  position: relative;
+
   &:last-of-type {
     margin-bottom: 6rem;
   }
+`;
+
+export const Title = styled.h2`
+  color: var(--color-primary);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
 `;
