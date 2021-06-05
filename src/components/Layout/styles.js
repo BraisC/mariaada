@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     --color-white: #f4f4f4;
     --color-black: #0A2027;
-    --color-primary: ##fecb0d;
+    --color-primary: #fecb0d;
     --color-translucid: #0a2027d8;
     @media only screen and (max-width: 75em){
         font-size: 56.25%;
