@@ -16,9 +16,8 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h2`
-  color: var(--color-primary);
-  font-size: 3rem;
+  font-family: Respondent;
+  font-size: 6rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  text-transform: uppercase;
 `;

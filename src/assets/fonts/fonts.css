@@ -6,3 +6,11 @@
   font-family: 'Celosia';
   src: url('./CelosiaGolden.ttf');
 }
+@font-face {
+  font-family: 'Respondent';
+  src: url('./Respondent.otf');
+}
+@font-face {
+  font-family: 'Mishella';
+  src: url('./Mishella.otf');
+}

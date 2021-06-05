@@ -15,22 +15,23 @@ export const Wrapper = styled.header`
 export const HeaderLogo = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  font-family: Celosia;
-  font-size: 6rem;
+  font-family: Mishella;
+  font-size: 4rem;
   justify-content: center;
   margin-top: 1.6rem;
   overflow: visible;
   position: relative;
+
   &::before {
     background-image: url(${bgLogo});
     background-position: center;
     background-size: cover;
     content: '';
-    height: 500%;
-    left: -2rem;
+    height: 800%;
+    left: -2.5rem;
     position: absolute;
     transform: rotate(-1.8deg);
-    width: 150%;
+    width: 160%;
     z-index: -1;
   }
 `;

@@ -13,7 +13,7 @@ const menuVariants = {
 const Header = () => (
   <>
     <Styled.Wrapper>
-      <Styled.HeaderLogo variants={logoVariants}>Maria Ada</Styled.HeaderLogo>
+      <Styled.HeaderLogo variants={logoVariants}>María Adá</Styled.HeaderLogo>
       <Styled.Menu variants={menuVariants}>
         <Styled.MenuOption>conóceme </Styled.MenuOption>
         <Styled.MenuOption>portfolio</Styled.MenuOption>
