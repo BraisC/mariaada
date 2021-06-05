@@ -1,7 +1,7 @@
 import * as Styled from './styles';
 
 const logoVariants = {
-  hidden: { x: '-150%' },
+  hidden: { x: '-160%' },
   visible: { x: 0, transition: { type: 'spring', bounce: 0.35 } },
 };
 
