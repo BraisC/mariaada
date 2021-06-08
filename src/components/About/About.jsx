@@ -2,6 +2,10 @@ import Section from 'components/Section/Section';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
+import washi from 'assets/images/washi.png';
+import { Bio } from './components/Bio';
+import * as Styled from './styles';
 
 export const About = () => {
   const data = useStaticQuery(
@@ -28,8 +32,17 @@ export const About = () => {
 
   return (
     <Section title="Conóceme">
-      <GatsbyImage image={getImage(data.mdx.frontmatter.Avatar)} />
-      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      <Styled.ImageWrapper>
+        <GatsbyImage image={getImage(data.mdx.frontmatter.Avatar)} />
+        <Styled.WashiTape src={washi} />
+      </Styled.ImageWrapper>
+      <MDXProvider
+        components={{
+          Bio,
+        }}
+      >
+        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      </MDXProvider>
     </Section>
   );
 };

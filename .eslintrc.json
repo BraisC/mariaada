@@ -7,5 +7,17 @@
   ],
   "rules": {
     "better-styled-components/sort-declarations-alphabetically": 1
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.mdx"
+      ],
+      "rules": {
+        "react/jsx-no-undef": [
+          0
+        ]
+      }
+    }
+  ]
 }
