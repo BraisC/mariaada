@@ -13,7 +13,8 @@ export const About = () => {
             Avatar: image {
               childImageSharp {
                 gatsbyImageData(
-                  width: 200
+                  width: 500
+                  quality: 100
                   placeholder: TRACED_SVG
                   tracedSVGOptions: { background: "#93d9de", color: "#fccd0f" }
                 )
