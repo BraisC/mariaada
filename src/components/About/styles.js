@@ -12,7 +12,8 @@ export const ImageWrapper = styled.div`
 
 export const WashiTape = styled.img`
   position: absolute;
-  right: -5rem;
-  transform: rotate(45deg);
+  right: -4rem;
+  top: -1rem;
+  transform: rotate(25deg);
   width: 15rem;
 `;
