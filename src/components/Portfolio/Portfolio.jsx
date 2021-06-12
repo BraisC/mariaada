@@ -8,9 +8,9 @@ export const Portfolio = () => {
       query {
         allMdx(filter: { fileAbsolutePath: { regex: "/content/portfolio/" } }) {
           nodes {
-            # Esto sirve para generar la URL en base al slug que crea gatsby para cada pagina generada por la template
             id
-            portfolioPath: gatsbyPath(filePath: "/{Mdx.frontmatter__title}")
+            # Esto sirve para generar la URL en base al slug que crea gatsby para cada pagina generada por la template
+            portfolioPath: gatsbyPath(filePath: "/portfolio/{Mdx.frontmatter__title}")
             frontmatter {
               title
               Cover: image {
