@@ -41,14 +41,37 @@ export const Portfolio = () => {
   return (
     <Section title="Portfolio">
       {data.allMdx.nodes.map((node) => (
-        <PortFolioItem key={node.id} to={node.portfolioPath}>
-          <GatsbyImage style={{ margin: 30 }} image={getImage(node.frontmatter.Cover)} />
-        </PortFolioItem>
+        <PortfolioItem
+          rotationMultiplier={Math.random() * 2 - 0.5}
+          key={node.id}
+          to={node.portfolioPath}
+        >
+          <CraftBack rotationMultiplier={Math.round(Math.random())} />
+          <Image image={getImage(node.frontmatter.Cover)} />
+        </PortfolioItem>
       ))}
     </Section>
   );
 };
 
-const PortFolioItem = styled(Link)`
+const PortfolioItem = styled(Link)`
+  position: relative;
+  transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier}deg)`};
+  width: 80%;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+`;
+
+const CraftBack = styled.div`
   background-image: url(${craft});
+  height: 100%;
+  position: absolute;
+  transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier * 180}deg)`};
+  width: 100%;
+`;
+
+const Image = styled(GatsbyImage)`
+  margin: 3rem;
 `;
