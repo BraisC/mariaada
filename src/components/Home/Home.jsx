@@ -8,6 +8,7 @@ export const Home = () => (
       alt="Portada"
       layout="fullWidth"
       placeholder="tracedSVG"
+      quality={100}
       tracedSVGOptions={{ color: '#fecb0d' }}
       style={{ height: '100%' }}
     />
