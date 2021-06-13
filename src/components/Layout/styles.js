@@ -26,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-white: #f4f4f4;
     --color-black: #0A2027;
     --color-primary: #fecb0d;
+    --color-secondary: #19c4dc;
     --color-translucid: #0a2027d8;
     @media only screen and (max-width: 75em){
         font-size: 56.25%;
