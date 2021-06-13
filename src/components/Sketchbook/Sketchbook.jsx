@@ -17,7 +17,7 @@ export const Sketchbook = () => {
             image: childImageSharp {
               gatsbyImageData(
                 quality: 70
-                width: 580
+                width: 535
                 placeholder: TRACED_SVG
                 tracedSVGOptions: { color: "#fccd0f" }
               )
