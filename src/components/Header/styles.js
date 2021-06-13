@@ -47,6 +47,7 @@ export const MenuOption = styled.p`
   cursor: pointer;
   font-family: Dynamoe;
   font-size: 2.6rem;
+  line-height: 1;
   margin: 0 1rem;
   transition: all 0.1s ease;
 
