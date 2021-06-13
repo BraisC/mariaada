@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import 'assets/fonts/fonts.css';
 import Header from 'components/Header/Header';
+import { Footer } from 'components/Footer/Footer';
 import * as Styled from './styles';
 
 const Layout = ({ children }) => {
@@ -47,7 +48,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </Styled.Content>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
