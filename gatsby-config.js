@@ -19,15 +19,27 @@ module.exports = {
         name: 'pages',
         path: `${__dirname}/src/pages/`,
       },
-      __key: 'pages',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'sketchbook',
+        path: `${__dirname}/src/content/sketchbook`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'portfolio',
+        path: `${__dirname}/src/content/portfolio`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
-        path: `${__dirname}/src/content`,
+        name: `about`,
+        path: `${__dirname}/src/content/about`,
       },
-      __key: 'content',
     },
   ],
 };
