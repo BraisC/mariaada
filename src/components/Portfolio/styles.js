@@ -49,3 +49,13 @@ export const Image = styled(GatsbyImage)`
   box-shadow: -2px 3px 20px 0px rgba(20, 20, 20, 0.38);
   margin: 3rem;
 `;
+
+export const Title = styled.h3`
+  background-color: var(--color-white);
+  color: #000;
+  font-family: Dynamoe;
+  font-size: 4rem;
+  line-height: 1;
+  overflow: hidden;
+  position: absolute;
+`;
