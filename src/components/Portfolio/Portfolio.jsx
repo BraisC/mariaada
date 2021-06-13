@@ -35,8 +35,6 @@ export const Portfolio = () => {
     `
   );
 
-  console.log(data);
-
   return (
     <Section title="Portfolio">
       {data.allMdx.nodes.map((node) => (
