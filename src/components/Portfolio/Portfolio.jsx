@@ -50,7 +50,9 @@ export const Portfolio = () => {
             zoomMultiplier={Math.random() * 20.5 + 0}
           />
           <Styled.Image image={getImage(node.frontmatter.Cover)} />
-          <Styled.Title>{node.frontmatter.title}</Styled.Title>
+          <Styled.Title rotationMultiplier={Math.random() * (3 - -3 + 1) + -3}>
+            {node.frontmatter.title}
+          </Styled.Title>
         </Styled.PortfolioItem>
       ))}
     </Section>

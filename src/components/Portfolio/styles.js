@@ -51,11 +51,12 @@ export const Image = styled(GatsbyImage)`
 `;
 
 export const Title = styled.h3`
+  backface-visibility: hidden;
   background-color: var(--color-white);
   color: #000;
   font-family: Dynamoe;
   font-size: 4rem;
   line-height: 1;
-  overflow: hidden;
   position: absolute;
+  transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier}deg)`};
 `;
