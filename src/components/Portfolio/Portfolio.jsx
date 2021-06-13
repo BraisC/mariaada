@@ -1,8 +1,7 @@
 import Section from 'components/Section/Section';
-import { graphql, Link, useStaticQuery } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
-import craft from 'assets/images/bg-craft.png';
+import { graphql, useStaticQuery } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
+import * as Styled from './styles';
 
 export const Portfolio = () => {
   const data = useStaticQuery(
@@ -41,51 +40,18 @@ export const Portfolio = () => {
   return (
     <Section title="Portfolio">
       {data.allMdx.nodes.map((node) => (
-        <PortfolioItem
+        <Styled.PortfolioItem
           rotationMultiplier={Math.random() * 1.5 + 0}
           key={node.id}
           to={node.portfolioPath}
         >
-          <CraftBack rotationMultiplier={Math.round(Math.random())} />
-          <Image image={getImage(node.frontmatter.Cover)} />
-        </PortfolioItem>
+          <Styled.CraftBack
+            rotationMultiplier={Math.round(Math.random())}
+            zoomMultiplier={Math.random() * 20.5 + 0}
+          />
+          <Styled.Image image={getImage(node.frontmatter.Cover)} />
+        </Styled.PortfolioItem>
       ))}
     </Section>
   );
 };
-
-const PortfolioItem = styled(Link)`
-  position: relative;
-  transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier}deg)`};
-  transition: all 0.2s ease;
-  width: 80%;
-
-  &:nth-child(odd) {
-    transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier}deg)`};
-    &:hover {
-      transform: rotate(0deg) scale(1.05);
-    }
-  }
-  &:nth-child(even) {
-    transform: ${({ rotationMultiplier }) => `rotate(-${rotationMultiplier}deg)`};
-    &:hover {
-      transform: rotate(0deg) scale(1.05);
-    }
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 4rem;
-  }
-`;
-
-const CraftBack = styled.div`
-  background-image: url(${craft});
-  height: 100%;
-  position: absolute;
-  transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier * 180}deg)`};
-  width: 100%;
-`;
-
-const Image = styled(GatsbyImage)`
-  margin: 3rem;
-`;

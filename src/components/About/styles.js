@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ImageWrapper = styled.div`
+  box-shadow: -3px 4px 8px 0px rgba(20, 20, 20, 0.48);
   position: relative;
   transform: rotate(-2deg);
   width: 30rem;
