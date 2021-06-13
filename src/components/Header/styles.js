@@ -54,13 +54,13 @@ export const MenuOption = styled.p`
   &:nth-child(odd) {
     transform: rotate(-1.6deg);
     &:hover {
-      transform: rotate(3.6deg) scale(1.1);
+      transform: rotate(0deg) scale(1.1);
     }
   }
   &:nth-child(even) {
     transform: rotate(1.6deg);
     &:hover {
-      transform: rotate(-3.6deg) scale(1.1);
+      transform: rotate(0deg) scale(1.1);
     }
   }
 `;
