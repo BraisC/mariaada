@@ -54,6 +54,10 @@ export const GlobalStyle = createGlobalStyle`
   .noscroll{
     overflow: hidden;
   }
+
+  .slick-slider {
+ box-shadow: -3px 4px 8px 0px rgba(20, 20, 20, 0.48);
+  }
 `;
 
 export const Content = styled(motion.main)`
