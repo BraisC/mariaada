@@ -42,7 +42,7 @@ export const Portfolio = () => {
     <Section title="Portfolio">
       {data.allMdx.nodes.map((node) => (
         <PortfolioItem
-          rotationMultiplier={Math.random() * 2 - 0.5}
+          rotationMultiplier={Math.random() * 1.5 + 0}
           key={node.id}
           to={node.portfolioPath}
         >
@@ -57,7 +57,21 @@ export const Portfolio = () => {
 const PortfolioItem = styled(Link)`
   position: relative;
   transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier}deg)`};
+  transition: all 0.2s ease;
   width: 80%;
+
+  &:nth-child(odd) {
+    transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier}deg)`};
+    &:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+  }
+  &:nth-child(even) {
+    transform: ${({ rotationMultiplier }) => `rotate(-${rotationMultiplier}deg)`};
+    &:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+  }
 
   &:not(:last-child) {
     margin-bottom: 4rem;
