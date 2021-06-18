@@ -34,5 +34,11 @@ export const Menu = styled.ul`
 `;
 
 export const MenuLink = styled(Link)`
-  padding: 1.5rem;
+  background-color: var(--color-white);
+  cursor: pointer;
+  font-family: Dynamoe;
+  font-size: 6.5rem;
+  line-height: 1;
+  margin: 0 1rem;
+  transition: all 0.1s ease;
 `;
