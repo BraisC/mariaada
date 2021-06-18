@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import washi from 'assets/images/washi.png';
+import { Element } from 'react-scroll';
 import { Bio } from './components/Bio';
 import * as Styled from './styles';
 
@@ -31,18 +32,20 @@ export const About = () => {
   );
 
   return (
-    <Section title="Conóceme">
-      <Styled.ImageWrapper>
-        <GatsbyImage image={getImage(data.mdx.frontmatter.Avatar)} />
-        <Styled.WashiTape src={washi} />
-      </Styled.ImageWrapper>
-      <MDXProvider
-        components={{
-          Bio,
-        }}
-      >
-        <MDXRenderer>{data.mdx.body}</MDXRenderer>
-      </MDXProvider>
-    </Section>
+    <Element name="about">
+      <Section title="Conóceme">
+        <Styled.ImageWrapper>
+          <GatsbyImage image={getImage(data.mdx.frontmatter.Avatar)} />
+          <Styled.WashiTape src={washi} />
+        </Styled.ImageWrapper>
+        <MDXProvider
+          components={{
+            Bio,
+          }}
+        >
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        </MDXProvider>
+      </Section>
+    </Element>
   );
 };

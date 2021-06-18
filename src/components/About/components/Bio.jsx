@@ -17,6 +17,7 @@ const BioText = styled.div`
 
   p:last-child {
     border-bottom: 3px solid var(--color-primary);
+    text-align: center;
   }
 `;
 

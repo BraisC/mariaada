@@ -1,23 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import 'assets/fonts/fonts.css';
 import Header from 'components/Header/Header';
 import { Footer } from 'components/Footer/Footer';
 import * as Styled from './styles';
 
 const Layout = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 60em)');
-    const changeMobile = () => {
-      mediaQuery.matches ? setIsMobile(true) : setIsMobile(false);
-    };
-
-    changeMobile();
-    mediaQuery.addEventListener('change', changeMobile);
-    return () => mediaQuery.removeEventListener('change', changeMobile);
-  }, []);
-
   //Fix for height in mobile https://stackoverflow.com/a/50683190
   const appHeight = () => {
     document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
@@ -39,7 +26,7 @@ const Layout = ({ children }) => {
     <>
       <Styled.GlobalStyle />
       <Styled.HeaderWrapper initial="hidden" animate="visible" variants={variants}>
-        {isMobile ? <Header /> : <Header />}
+        <Header />
       </Styled.HeaderWrapper>
       <Styled.Content
         initial={{ opacity: 0 }}

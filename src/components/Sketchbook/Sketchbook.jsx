@@ -1,6 +1,7 @@
 import Section from 'components/Section/Section';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Element } from 'react-scroll';
 import { Carousel } from './components/Carousel';
 
 export const Sketchbook = () => {
@@ -28,15 +29,15 @@ export const Sketchbook = () => {
     `
   );
 
-  console.log(data);
-
   return (
-    <Section title="Sketchbook">
-      <Carousel>
-        {data.allFile.nodes.map((image) => (
-          <GatsbyImage key={image.relativePath} image={getImage(image.image)} />
-        ))}
-      </Carousel>
-    </Section>
+    <Element name="sketchbook">
+      <Section title="Sketchbook">
+        <Carousel>
+          {data.allFile.nodes.map((image) => (
+            <GatsbyImage key={image.relativePath} image={getImage(image.image)} />
+          ))}
+        </Carousel>
+      </Section>
+    </Element>
   );
 };

@@ -6,6 +6,7 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Section from 'components/Section/Section';
+import { Element } from 'react-scroll';
 
 config.autoAddCss = false;
 
@@ -32,40 +33,42 @@ const Link = styled.a`
 `;
 
 export const Contact = () => (
-  <Section title="Contacto">
-    <Wrapper>
-      <Link
-        href="https://t.me/BraisDev"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Telegram Link"
-      >
-        <Icon icon={faTelegram} />
-      </Link>
-      <Link
-        href="https://www.instagram.com/mariaadavazquez/"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Instagram Link"
-      >
-        <Icon icon={faInstagram} />
-      </Link>
-      <Link
-        href="https://www.linkedin.com/in/mariaadavazquez/"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Linkedin Link"
-      >
-        <Icon icon={faLinkedin} />
-      </Link>
-      <Link
-        href="mailto:mariaadavazquez@gmail.com"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Mail Link"
-      >
-        <Icon icon={faEnvelopeSquare} />
-      </Link>
-    </Wrapper>
-  </Section>
+  <Element name="contact">
+    <Section title="Contacto">
+      <Wrapper>
+        <Link
+          href="https://t.me/BraisDev"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Telegram Link"
+        >
+          <Icon icon={faTelegram} />
+        </Link>
+        <Link
+          href="https://www.instagram.com/mariaadavazquez/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram Link"
+        >
+          <Icon icon={faInstagram} />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/mariaadavazquez/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Linkedin Link"
+        >
+          <Icon icon={faLinkedin} />
+        </Link>
+        <Link
+          href="mailto:mariaadavazquez@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Mail Link"
+        >
+          <Icon icon={faEnvelopeSquare} />
+        </Link>
+      </Wrapper>
+    </Section>
+  </Element>
 );

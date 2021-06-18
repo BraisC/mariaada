@@ -59,4 +59,9 @@ export const Title = styled.h3`
   line-height: 1;
   position: absolute;
   transform: ${({ rotationMultiplier }) => `rotate(${rotationMultiplier}deg)`};
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
 `;

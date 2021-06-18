@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import bgLogo from 'assets/images/bg-logo.png';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 export const Wrapper = styled.header`
   align-items: center;
@@ -16,13 +17,13 @@ export const HeaderLogo = styled(motion.div)`
   display: flex;
   flex-direction: column;
   font-family: Mishella;
-  font-size: 4rem;
+  font-size: ${(props) => (props.isMobile ? '3rem' : '4rem')};
   justify-content: center;
   margin-top: 1.6rem;
   overflow: visible;
   position: relative;
 
-  &::before {
+  &::after {
     background-image: url(${bgLogo});
     background-position: center;
     background-size: cover;
@@ -38,11 +39,11 @@ export const HeaderLogo = styled(motion.div)`
 
 export const Menu = styled(motion.div)`
   display: flex;
-  margin-top: 15px;
+  margin-top: ${(props) => (props.isMobile ? '0' : '1.5rem')};
   transform: rotate(-1.2deg);
 `;
 
-export const MenuOption = styled.p`
+export const MenuOption = styled(Link)`
   background-color: var(--color-white);
   cursor: pointer;
   font-family: Dynamoe;
@@ -63,4 +64,14 @@ export const MenuOption = styled.p`
       transform: rotate(0deg) scale(1.1);
     }
   }
+`;
+
+export const MenuMobile = styled.p`
+  background-color: var(--color-white);
+  cursor: pointer;
+  font-family: Dynamoe;
+  font-size: 2.6rem;
+  line-height: 1;
+  margin: 0 1rem;
+  transition: all 0.1s ease;
 `;
