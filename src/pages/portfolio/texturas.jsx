@@ -120,24 +120,7 @@ const Texturas = () => (
           style={{ width: '50%', margin: 10 }}
         />
       </div>
-      <div style={{ display: 'flex' }}>
-        <StaticImage
-          src="../../content/portfolio/texturas/pictures/texturas-15.jpg"
-          alt="Portada"
-          quality={100}
-          tracedSVGOptions={{ color: '#fecb0d' }}
-          placeholder="tracedSVG"
-          style={{ width: '50%', margin: 10 }}
-        />
-        <StaticImage
-          src="../../content/portfolio/texturas/pictures/texturas-16.jpg"
-          alt="Portada"
-          quality={100}
-          tracedSVGOptions={{ color: '#fecb0d' }}
-          placeholder="tracedSVG"
-          style={{ width: '50%', margin: 10 }}
-        />
-      </div>
+
       <StyledParagraph>Capa Snow: Alcántara y trapillo (Breo Alamancos)</StyledParagraph>
     </div>
   </SRLWrapper>
