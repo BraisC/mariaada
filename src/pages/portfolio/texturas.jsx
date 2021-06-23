@@ -2,7 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { SRLWrapper } from 'simple-react-lightbox';
 import styled from 'styled-components';
 
-const PeruHolidays = () => (
+const Texturas = () => (
   <SRLWrapper>
     <div style={{ fontSize: '1.6rem' }}>
       <div style={{ display: 'flex' }}>
@@ -143,7 +143,7 @@ const PeruHolidays = () => (
   </SRLWrapper>
 );
 
-export default PeruHolidays;
+export default Texturas;
 
 const StyledParagraph = styled.p`
   margin: 5px 10px;
