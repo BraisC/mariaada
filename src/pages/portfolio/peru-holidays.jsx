@@ -1,10 +1,11 @@
+import Section from 'components/Section/Section';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SRLWrapper } from 'simple-react-lightbox';
 import styled from 'styled-components';
 
 const PeruHolidays = () => (
   <SRLWrapper>
-    <div style={{ fontSize: '1.6rem' }}>
+    <Section>
       <div style={{ display: 'flex' }}>
         <StaticImage
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-01.jpg"
@@ -153,12 +154,15 @@ const PeruHolidays = () => (
         PD. Maleta lista, dentro hay una explosión de colores y estampados frutales con los que
         pasaremos “inadvertidas”
       </StyledParagraph>
-    </div>
+    </Section>
   </SRLWrapper>
 );
 
 export default PeruHolidays;
 
 const StyledParagraph = styled.p`
+  font-size: 1.6rem;
   margin: 5px 10px;
+  text-align: left;
+  width: 100%;
 `;

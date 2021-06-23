@@ -1,10 +1,11 @@
+import Section from 'components/Section/Section';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SRLWrapper } from 'simple-react-lightbox';
 import styled from 'styled-components';
 
 const Texturas = () => (
   <SRLWrapper>
-    <div style={{ fontSize: '1.6rem' }}>
+    <Section>
       <div style={{ display: 'flex' }}>
         <StaticImage
           src="../../content/portfolio/texturas/pictures/texturas-01.jpg"
@@ -122,12 +123,15 @@ const Texturas = () => (
       </div>
 
       <StyledParagraph>Capa Snow: Alcántara y trapillo (Breo Alamancos)</StyledParagraph>
-    </div>
+    </Section>
   </SRLWrapper>
 );
 
 export default Texturas;
 
 const StyledParagraph = styled.p`
+  font-size: 1.6rem;
   margin: 5px 10px;
+  text-align: left;
+  width: 100%;
 `;

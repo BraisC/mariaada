@@ -1,10 +1,11 @@
+import Section from 'components/Section/Section';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SRLWrapper } from 'simple-react-lightbox';
 import styled from 'styled-components';
 
 const VenusRusa = () => (
   <SRLWrapper>
-    <div style={{ fontSize: '1.6rem' }}>
+    <Section>
       <StaticImage
         src="../../content/portfolio/venus-rusa/pictures/venus-rusa-01.jpg"
         alt="Portada"
@@ -146,12 +147,15 @@ const VenusRusa = () => (
       <StyledParagraph>
         David Nóvoa y Chus Otero como fotógrafo y directora creativa
       </StyledParagraph>
-    </div>
+    </Section>
   </SRLWrapper>
 );
 
 export default VenusRusa;
 
 const StyledParagraph = styled.p`
+  font-size: 1.6rem;
   margin: 5px 10px;
+  text-align: left;
+  width: 100%;
 `;

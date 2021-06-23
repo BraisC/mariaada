@@ -1,10 +1,11 @@
+import Section from 'components/Section/Section';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SRLWrapper } from 'simple-react-lightbox';
 import styled from 'styled-components';
 
 const AfricanGardens = () => (
   <SRLWrapper>
-    <div style={{ fontSize: '1.6rem' }}>
+    <Section>
       <StaticImage
         src="../../content/portfolio/african-gardens/pictures/african-gardens-01.jpg"
         alt="Portada"
@@ -162,12 +163,15 @@ const AfricanGardens = () => (
         tracedSVGOptions={{ color: '#fecb0d' }}
         style={{ margin: 10 }}
       />
-    </div>
+    </Section>
   </SRLWrapper>
 );
 
 export default AfricanGardens;
 
 const StyledParagraph = styled.p`
+  font-size: 1.6rem;
   margin: 5px 10px;
+  text-align: left;
+  width: 100%;
 `;
