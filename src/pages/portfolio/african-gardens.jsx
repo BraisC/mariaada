@@ -147,7 +147,7 @@ const AfricanGardens = () => (
         />
         <StaticImage
           src="../../content/portfolio/african-gardens/pictures/african-gardens-16.jpg"
-          alt="Portada"
+          alt="16"
           quality={100}
           placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
