@@ -10,6 +10,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-01.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -17,6 +18,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-02.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -36,6 +38,7 @@ const PeruHolidays = () => (
         src="../../content/portfolio/peru-holidays/pictures/peru-holidays-03.jpg"
         alt="Portada"
         quality={100}
+        placeholder="tracedSVG"
         tracedSVGOptions={{ color: '#fecb0d' }}
         style={{ margin: 10 }}
       />
@@ -43,6 +46,7 @@ const PeruHolidays = () => (
         src="../../content/portfolio/peru-holidays/pictures/peru-holidays-04.jpg"
         alt="Portada"
         quality={100}
+        placeholder="tracedSVG"
         tracedSVGOptions={{ color: '#fecb0d' }}
         style={{ margin: 10 }}
       />
@@ -51,6 +55,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-05.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -58,6 +63,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-06.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -66,6 +72,7 @@ const PeruHolidays = () => (
         src="../../content/portfolio/peru-holidays/pictures/peru-holidays-08.jpg"
         alt="Portada"
         quality={100}
+        placeholder="tracedSVG"
         tracedSVGOptions={{ color: '#fecb0d' }}
         style={{ margin: 10 }}
       />
@@ -74,6 +81,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-09.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -81,6 +89,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-10.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -90,6 +99,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-11.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -97,6 +107,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-12.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -106,6 +117,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-13.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -113,6 +125,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-14.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -122,6 +135,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-15.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
@@ -129,6 +143,7 @@ const PeruHolidays = () => (
           src="../../content/portfolio/peru-holidays/pictures/peru-holidays-16.jpg"
           alt="Portada"
           quality={100}
+          placeholder="tracedSVG"
           tracedSVGOptions={{ color: '#fecb0d' }}
           style={{ width: '50%', margin: 10 }}
         />
