@@ -14,8 +14,6 @@ export const Portfolio = () => {
         ) {
           nodes {
             id
-            # Esto sirve para generar la URL en base al slug que crea gatsby para cada pagina generada por la template
-            portfolioPath: gatsbyPath(filePath: "/portfolio/{Mdx.frontmatter__title}")
             frontmatter {
               title
               Cover: image {
@@ -43,7 +41,7 @@ export const Portfolio = () => {
           <Styled.PortfolioItem
             rotationMultiplier={Math.random() * 1.5 + 0}
             key={node.id}
-            to={node.portfolioPath}
+            to={'/portfolio/' + node.frontmatter.title.toLowerCase().replace(' ', '-')}
           >
             <Styled.CraftBack
               rotationMultiplier={Math.round(Math.random())}

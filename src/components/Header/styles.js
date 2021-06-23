@@ -13,7 +13,8 @@ export const Wrapper = styled.header`
   z-index: 4;
 `;
 
-export const HeaderLogo = styled(motion.div)`
+export const HeaderLogo = styled(motion.p)`
+  color: black;
   display: flex;
   flex-direction: column;
   font-family: Mishella;

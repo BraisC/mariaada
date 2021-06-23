@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { Link } from 'gatsby';
 import * as Styled from './styles';
 import { Sidebar } from './components/Sidebar';
 
@@ -37,9 +38,11 @@ const Header = () => {
   return (
     <>
       <Styled.Wrapper>
-        <Styled.HeaderLogo isMobile={isMobile ? 1 : 0} variants={logoVariants}>
-          María Adá
-        </Styled.HeaderLogo>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <Styled.HeaderLogo isMobile={isMobile ? 1 : 0} variants={logoVariants}>
+            María Adá
+          </Styled.HeaderLogo>
+        </Link>
         <Styled.Menu isMobile={isMobile ? 1 : 0} variants={menuVariants}>
           {!isMobile ? (
             <>
