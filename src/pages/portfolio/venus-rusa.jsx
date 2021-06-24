@@ -6,14 +6,6 @@ import styled from 'styled-components';
 const VenusRusa = () => (
   <SRLWrapper>
     <Section>
-      <StaticImage
-        src="../../content/portfolio/venus-rusa/pictures/venus-rusa-01.jpg"
-        alt="Portada"
-        quality={100}
-        tracedSVGOptions={{ color: '#fecb0d' }}
-        placeholder="tracedSVG"
-        style={{ margin: 10 }}
-      />
       <div style={{ display: 'flex' }}>
         <StaticImage
           src="../../content/portfolio/venus-rusa/pictures/venus-rusa-02.jpg"
@@ -131,6 +123,14 @@ const VenusRusa = () => (
       />
       <StaticImage
         src="../../content/portfolio/venus-rusa/pictures/venus-rusa-16.jpg"
+        alt="Portada"
+        quality={100}
+        tracedSVGOptions={{ color: '#fecb0d' }}
+        placeholder="tracedSVG"
+        style={{ margin: 10 }}
+      />
+      <StaticImage
+        src="../../content/portfolio/venus-rusa/pictures/venus-rusa-01.jpg"
         alt="Portada"
         quality={100}
         tracedSVGOptions={{ color: '#fecb0d' }}
