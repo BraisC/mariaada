@@ -5,8 +5,10 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import washi from 'assets/images/washi.png';
 import { Element } from 'react-scroll';
+import { Button } from 'components/Button/Button';
 import { Bio } from './components/Bio';
 import * as Styled from './styles';
+import curriculum from '../../../static/ada-vazquez-maria-cv.pdf';
 
 export const About = () => {
   const data = useStaticQuery(
@@ -45,6 +47,9 @@ export const About = () => {
         >
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </MDXProvider>
+        <Button href={curriculum} target="_blank" rel="noreferrer">
+          Mira mi CV
+        </Button>
       </Section>
     </Element>
   );
