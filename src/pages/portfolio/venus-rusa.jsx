@@ -6,6 +6,20 @@ import styled from 'styled-components';
 const VenusRusa = () => (
   <SRLWrapper>
     <Section>
+      <StaticImage
+        src="../../content/portfolio/venus-rusa/pictures/venus-rusa-00.jpg"
+        alt="Portada"
+        quality={100}
+        tracedSVGOptions={{ color: '#fecb0d' }}
+        placeholder="tracedSVG"
+        style={{ margin: 10 }}
+      />
+      <StyledParagraph>
+        Tradicionales ambientes rusos, matrioskas con siluetas amplias y redondeadas que pretenden
+        representar la maternidad y fertilidad, semiesferas a modo de pechos y bolsillos en el
+        vientre, pliegues en estructura y tejido con el objetivo de crear volúmenes y efectos de
+        luz-sombra.
+      </StyledParagraph>
       <div style={{ display: 'flex' }}>
         <StaticImage
           src="../../content/portfolio/venus-rusa/pictures/venus-rusa-02.jpg"
@@ -24,12 +38,6 @@ const VenusRusa = () => (
           style={{ width: '50%', margin: 10 }}
         />
       </div>
-      <StyledParagraph>
-        Tradicionales ambientes rusos, matrioskas con siluetas amplias y redondeadas que pretenden
-        representar la maternidad y fertilidad, semiesferas a modo de pechos y bolsillos en el
-        vientre, pliegues en estructura y tejido con el objetivo de crear volúmenes y efectos de
-        luz-sombra.
-      </StyledParagraph>
 
       <div style={{ display: 'flex' }}>
         <StaticImage

@@ -17,11 +17,12 @@ export const HeaderLogo = styled(motion.p)`
   color: black;
   display: flex;
   flex-direction: column;
-  font-family: Mishella;
-  font-size: ${(props) => (props.isMobile ? '3rem' : '4rem')};
+  font-family: Virginia;
+  font-size: ${(props) => (props.isMobile ? '4rem' : '5rem')};
   justify-content: center;
   margin-top: 1.6rem;
   overflow: visible;
+  padding-right: 1rem;
   position: relative;
 
   &::after {
@@ -29,8 +30,8 @@ export const HeaderLogo = styled(motion.p)`
     background-position: center;
     background-size: cover;
     content: '';
-    height: 800%;
-    left: -2.5rem;
+    height: 550%;
+    left: -3rem;
     position: absolute;
     transform: rotate(-1.8deg);
     width: 160%;

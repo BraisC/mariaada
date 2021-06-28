@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTelegram, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -37,12 +37,12 @@ export const Contact = () => (
     <Section title="Contacto">
       <Wrapper>
         <Link
-          href="https://t.me/BraisDev"
+          href="https://www.linkedin.com/in/mariaadavazquez/"
           target="_blank"
           rel="noreferrer"
-          aria-label="Telegram Link"
+          aria-label="Linkedin Link"
         >
-          <Icon icon={faTelegram} />
+          <Icon icon={faLinkedin} />
         </Link>
         <Link
           href="https://www.instagram.com/mariaadavazquez/"
@@ -53,12 +53,12 @@ export const Contact = () => (
           <Icon icon={faInstagram} />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/mariaadavazquez/"
+          href="https://www.pinterest.es/mariaadavazquez/"
           target="_blank"
           rel="noreferrer"
-          aria-label="Linkedin Link"
+          aria-label="Telegram Link"
         >
-          <Icon icon={faLinkedin} />
+          <Icon icon={faPinterest} />
         </Link>
         <Link
           href="mailto:mariaadavazquez@gmail.com"
